@@ -26,8 +26,8 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import model1 from "./model1.png";
 import model2 from "./model2.svg";
+import model3 from "./model3.png";
 import Object_cal from "./Object_cal.png";
 import Object_graph from "./Object_graph.png";
 import phone from "./phone.png";
@@ -62,8 +62,8 @@ export {
   people03,
   logo2,
   logo3,
-  model1,
   model2,
+  model3,
   Object_cal,
   Object_graph,
   phone,

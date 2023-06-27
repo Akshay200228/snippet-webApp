@@ -1,5 +1,5 @@
 import React from 'react';
-import { iMac1, Object_cal, phone, price, model1, model2 } from '../assets';
+import { iMac1, Object_cal, phone, price, model3, model2 } from '../assets';
 import styles from '../style';
 import './Hero1.css';
 
@@ -41,8 +41,8 @@ const Hero1 = () => {
             <img src={Object_cal} alt="" className="object-none object-bottom mx-auto" />
           </div>
 
-          <img src={model1} alt="Model 1" className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]" />
-          <img src={model2} alt="Model 2" className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]" />
+          <img src={model3} alt="Model 1" className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]" />
+          <img src={model2} alt="Model 2" className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]" />
 
           {/* gradient start */}
           <div className="absolute z-0 w-[40%] h-[35%] top-0 purple__gradient" />
