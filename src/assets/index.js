@@ -28,7 +28,6 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import model1 from "./model1.png";
 import model2 from "./model2.svg";
-import Object_Pc from "./Object_Pc.png";
 import Object_cal from "./Object_cal.png";
 import Object_graph from "./Object_graph.png";
 import phone from "./phone.png";
@@ -65,7 +64,6 @@ export {
   logo3,
   model1,
   model2,
-  Object_Pc,
   Object_cal,
   Object_graph,
   phone,
