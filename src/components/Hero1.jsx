@@ -6,7 +6,10 @@ import './Hero1.css';
 const Hero1 = () => {
   return (
     <section id="hero" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 mt-8 sm:px-16 px-6`}>
+      <div 
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 mt-8 sm:px-16 px-6`}
+        data-aos='fade-right' data-aos-delay='600'
+      >
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
@@ -29,7 +32,10 @@ const Hero1 = () => {
       </div>
 
       {/* Models */}
-      <div className="flex items-end justify-end flex-1">
+      <div 
+        className="flex items-end justify-end flex-1"
+        data-aos='fade-left' data-aos-delay='600'
+      >
         <div className={`relative flex justify-end w-full h-screen ${styles.flexCenter}`}>
           <div className="absolute left-0 right-0 z-10 mx-auto sm:right-12 top-28 sm:top-20 animate-custom-bounce">
             <img src={iMac1} alt="" className="object-none object-top mx-auto" />
