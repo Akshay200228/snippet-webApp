@@ -6,9 +6,9 @@ import './Hero1.css';
 
 const Hero1 = () => {
   return (
-    <section id="hero" className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`} >
+    <section id="hero" className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
       {/* Left side */}
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos='fade-up' data-aos-delay='400'>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-delay="400">
         {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
@@ -29,10 +29,10 @@ const Hero1 = () => {
 
       {/* Right side */}
       {/* Models */}
-      <div className="flex items-end justify-end flex-1 lg:mt-0">
-        <div className={`relative flex justify-end w-full h-screen ${styles.flexCenter}`}>
+      <div className={`${styles.flexCenter} pt-6 flex items-end justify-end flex-1 lg:mt-0`}>
+        <div className={`relative flex justify-end w-full h-screen pr-6 sm:pr-0`}>
           {/* iMac Image */}
-          <div className="absolute left-0 right-0 z-10 mx-auto sm:right-2 top-28 sm:top-20 animate-custom-bounce">
+          <div className="absolute left-0 right-0 z-10 mx-auto sm:right-2 top-24 sm:top-16 animate-custom-bounce">
             <motion.img
               src={iMac1}
               alt=""
@@ -44,7 +44,7 @@ const Hero1 = () => {
           </div>
 
           {/* Phone Image */}
-          <div className="absolute z-10 right-2 sm:bottom-1/4 sm:right-36 animate-custom-bounce">
+          <div className="absolute z-10 right-14 sm:bottom-1/4 bottom-1/3 animate-custom-bounce">
             <motion.img
               src={phone}
               alt=""
@@ -71,8 +71,9 @@ const Hero1 = () => {
             src={model3}
             alt="Model 1"
             loading="lazy"
-            className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]"
-            data-aos='fade-right' data-aos-delay='400'
+            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
+            data-aos="fade-right"
+            data-aos-delay="400"
           />
 
           <motion.img
@@ -80,7 +81,8 @@ const Hero1 = () => {
             alt="Model 2"
             loading="lazy"
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
-            data-aos='fade-left' data-aos-delay='400'
+            data-aos="fade-left"
+            data-aos-delay="400"
           />
 
           {/* Gradients */}
