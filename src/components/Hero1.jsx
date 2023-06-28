@@ -78,8 +78,9 @@ const Hero1 = () => {
             />
           </div>
 
+          {/* Scale Up Animation */}
           {/* Model 1 Image */}
-          <motion.img
+          {/* <motion.img
             src={model3}
             alt="Model 1"
             loading="lazy"
@@ -87,16 +88,36 @@ const Hero1 = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ ease: "easeOut", duration: 1.5, delay: 0 }}
             className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]"
-          />
+          /> */}
 
           {/* Model 2 Image */}
-          <motion.img
+          {/* <motion.img
             src={model2}
             alt="Model 2"
             loading="lazy"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ ease: "easeOut", duration: 1.5, delay: 0 }}
+            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
+          /> */}
+
+          <motion.img
+            src={model3}
+            alt="Model 1"
+            loading='lazy'
+            initial={{ right: "5rem", top: "0rem" }}
+            animate={{ right: "0rem", top: "0rem" }}
+            transition={{ ease: "easeOut", duration: 4 }}
+            className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]"
+          />
+
+          <motion.img
+            src={model2}
+            alt="Model 2"
+            loading='lazy'
+            initial={{ left: "5rem", top: "0rem" }}
+            animate={{ left: "0rem", top: "0rem" }}
+            transition={{ ease: "easeOut", duration: 4 }}
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
           />
 
