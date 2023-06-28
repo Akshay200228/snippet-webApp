@@ -14,7 +14,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 z-50 flex items-center justify-between w-full py-4 navbar backdrop-filter backdrop-blur-lg bg-opacity-70" 
+    <nav 
+    className="fixed top-0 z-50 flex items-center justify-between w-full py-4 navbar backdrop-filter backdrop-blur-lg bg-opacity-70" 
     data-aos='fade-down' data-aos-delay='200'
     >
       <img
