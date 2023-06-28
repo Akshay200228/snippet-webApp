@@ -4,17 +4,10 @@ import styles from '../style';
 import './Hero1.css';
 import { motion } from "framer-motion";
 
-
 const Hero1 = () => {
-
   return (
-    <section id="hero" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-      <motion.div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 mt-8 sm:px-16 px-6`}
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeOut", duration: 2 }}
-      >
+    <section id="hero" className={`flex md:flex-row flex-col ${styles.paddingY}`} style={{ minHeight: "100vh" }}>
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 mt-8 sm:px-16 px-6`} data-aos='fade-right' data-aos-delay='400'>
         {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
@@ -31,13 +24,7 @@ const Hero1 = () => {
             <span className="text-gradient">WEBSITE</span>
           </h1>
         </div>
-
-        {/* Paragraph */}
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine
-          annual percentage rates, annual fees.
-        </p>
-      </motion.div>
+      </div>
 
       {/* Models */}
       <div className="flex items-end justify-end flex-1">
@@ -78,47 +65,52 @@ const Hero1 = () => {
             />
           </div>
 
-          {/* Scale Up Animation */}
-          {/* Model 1 Image */}
-          {/* <motion.img
-            src={model3}
-            alt="Model 1"
-            loading="lazy"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ ease: "easeOut", duration: 1.5, delay: 0 }}
-            className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]"
-          /> */}
-
-          {/* Model 2 Image */}
-          {/* <motion.img
-            src={model2}
-            alt="Model 2"
-            loading="lazy"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ ease: "easeOut", duration: 1.5, delay: 0 }}
-            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
-          /> */}
-
           <motion.img
             src={model3}
             alt="Model 1"
-            loading='lazy'
-            initial={{ right: "5rem", top: "0rem" }}
-            animate={{ right: "0rem", top: "0rem" }}
-            transition={{ ease: "easeOut", duration: 4 }}
-            className="object-cover w-1/2 h-4/6 sm:h-full relative z-[5]"
+            loading="lazy"
+            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5] hover:rotate-45 hover:scale-110"
+            initial={{
+              opacity: 0,
+              rotateY: -90,
+              rotateX: -20,
+              rotateZ: 30,
+              scale: 0.8,
+              perspective: "1000px",
+            }}
+            animate={{
+              opacity: 1,
+              rotateY: 0,
+              rotateX: 0,
+              rotateZ: 0,
+              scale: 1,
+              perspective: "1000px",
+            }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           />
 
           <motion.img
             src={model2}
             alt="Model 2"
-            loading='lazy'
-            initial={{ left: "5rem", top: "0rem" }}
-            animate={{ left: "0rem", top: "0rem" }}
-            transition={{ ease: "easeOut", duration: 4 }}
-            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
+            loading="lazy"
+            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5] hover:-rotate-45 hover:scale-110"
+            initial={{
+              opacity: 0,
+              rotateY: 90,
+              rotateX: 20,
+              rotateZ: -30,
+              scale: 0.8,
+              perspective: "1000px",
+            }}
+            animate={{
+              opacity: 1,
+              rotateY: 0,
+              rotateX: 0,
+              rotateZ: 0,
+              scale: 1,
+              perspective: "1000px",
+            }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           />
 
           {/* Gradients */}
