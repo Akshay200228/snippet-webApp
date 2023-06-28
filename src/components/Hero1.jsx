@@ -8,7 +8,7 @@ const Hero1 = () => {
   return (
     <section id="hero" className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
       {/* Left side */}
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-up" data-aos-delay="400">
+      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-right" data-aos-delay="400">
         {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
@@ -40,6 +40,7 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-top mx-auto"
+              loading="lazy"
             />
           </div>
 
@@ -52,6 +53,7 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
+              loading="lazy"
             />
           </div>
 
@@ -64,25 +66,26 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
+              loading="lazy"
             />
           </div>
 
           <motion.img
             src={model3}
             alt="Model 1"
-            loading="lazy"
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
             data-aos="fade-right"
             data-aos-delay="400"
+            loading="lazy"
           />
 
           <motion.img
             src={model2}
             alt="Model 2"
-            loading="lazy"
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
             data-aos="fade-left"
             data-aos-delay="400"
+            loading="lazy"
           />
 
           {/* Gradients */}
