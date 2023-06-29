@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { iMac1, Object_cal, phone, price, model3, model4, model2 } from '../assets';
+import { iMac1, Object_cal, phone, price, model3, model4 } from '../assets';
 import styles from '../style';
 import './Hero1.css';
 
@@ -40,7 +40,7 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-top mx-auto"
-              loading="lazy"
+              // loading="lazy"
             />
           </div>
 
@@ -53,7 +53,7 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
-              loading="lazy"
+              // loading="lazy"
             />
           </div>
 
@@ -66,7 +66,7 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
-              loading="lazy"
+              // loading="lazy"
             />
           </div>
 
@@ -74,18 +74,18 @@ const Hero1 = () => {
             src={model3}
             alt="Model 1"
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
-            data-aos="fade-right"
-            data-aos-delay="400"
-            loading="lazy"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           />
 
           <motion.img
             src={model4}
             alt="Model 2"
-            className="object-cover w-1/2 h-3/6 top-8 sm:h-4/6 sm:top-4 relative z-[5]"
-            data-aos="fade-left"
-            data-aos-delay="400"
-            loading="lazy"
+            className="object-cover w-1/2 h-3/5 top-8 sm:h-4/5 sm:top-4 relative z-[5]"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           />
 
           {/* Gradients */}
