@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { iMac1, Object_cal, phone, price, model3, model4, model2 } from '../assets';
+import { iMac1, Object_cal, phone, price, model3, model4 } from '../assets';
 import styles from '../style';
 import './Hero1.css';
 
@@ -80,7 +80,7 @@ const Hero1 = () => {
           />
 
           <motion.img
-            src={model2}
+            src={model4}
             alt="Model 2"
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
             data-aos="fade-left"
