@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="hidden mr-20 space-x-4 sm:flex">
         <button
           type="button"
-          className={`py-4 px-6 font-poppins font-medium text-[14px] text-primary bg-purple-gradient rounded-[10px] outline-none ${
+          className={`py-4 px-6 font-poppins font-medium text-[14px] text-white bg-purple-gradient rounded-[10px] outline-none ${
             animateButton ? 'animate-pulse' : ''
           }`}
         >

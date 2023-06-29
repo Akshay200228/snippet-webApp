@@ -40,7 +40,6 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-top mx-auto"
-              // loading="lazy"
             />
           </div>
 
@@ -53,7 +52,6 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
-              // loading="lazy"
             />
           </div>
 
@@ -66,7 +64,6 @@ const Hero1 = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
               className="object-none object-bottom mx-auto"
-              // loading="lazy"
             />
           </div>
 

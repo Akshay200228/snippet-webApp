@@ -1,11 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './style';
-import { Navbar, Hero1, Footer, Testimonials, Overview } from './components';
+import { Navbar } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Home from './pages/Home';
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulating a delay to show the preloader
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    // Clean up the timeout on unmount
+    return () => clearTimeout(timeout);
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -13,31 +25,30 @@ const App = () => {
     });
   }, []);
 
-
   return (
     <div className='w-full overflow-hidden' style={{ backgroundColor: '#0C0E15' }}>
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
+      {isLoading ? (
+        // Preloader component
+        <div className={`${styles.flexCenter} h-screen`}>
+          <h1 className="text-4xl text-white">Loading...</h1>
         </div>
-      </div>
+      ) : (
+        <>
+          <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Navbar />
+            </div>
+          </div>
 
-      <div className={`${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero1 />
-        </div>
-      </div>
-
-      <div className={`${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Overview />
-          <Testimonials />
-          <Footer />
-        </div>
-      </div>
-
+          <div className={`${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Home />
+            </div>
+          </div>
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
 export default App;

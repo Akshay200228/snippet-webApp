@@ -1,8 +1,11 @@
 import React from 'react'
+import styles from '../style'
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <div className={`${styles.paddingX}`}>
+      Testimonials
+    </div>
   )
 }
 

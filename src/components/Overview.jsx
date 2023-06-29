@@ -1,21 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { card } from '../assets';
+import styles from '../style';
 
 const Overview = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-      >
-        <img
-          src={card}
-          alt="Overview Image"
-          className="w-full h-64 rounded-full shadow-lg"
-        />
-      </motion.div>
+    <div className={`${styles.paddingX} className="flex items-center justify-center min-h-screen`}>
+      Overview
     </div>
   );
 };
