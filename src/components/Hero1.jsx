@@ -80,9 +80,9 @@ const Hero1 = () => {
           />
 
           <motion.img
-            src={model2}
+            src={model4}
             alt="Model 2"
-            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
+            className="object-cover w-1/2 h-3/6 top-8 sm:h-4/6 sm:top-4 relative z-[5]"
             data-aos="fade-left"
             data-aos-delay="400"
             loading="lazy"
