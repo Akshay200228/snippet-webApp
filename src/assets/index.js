@@ -5,6 +5,7 @@ import close from "./close.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import computer from "./computer.png";
 import model2 from "./model2.svg";
 import model3 from "./model3.png";
 import model4 from "./model4.png";
@@ -15,6 +16,7 @@ import price from "./price.png";
 
 export {
   card,
+  computer,
   menu,
   close,
   people01,

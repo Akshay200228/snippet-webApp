@@ -6,10 +6,10 @@ import './Hero1.css';
 
 const Hero1 = () => {
   return (
-    <section id="hero" className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
+    <section id="hero" className={`mt-4 md:mt-0 flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
       {/* Left side */}
       <motion.div
-        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        className={`flex-1 ${styles.flexStart} h-[20vh] sm:h-screen flex-col xl:px-0 sm:px-16 px-6`}
         initial={{ x: -100, opacity: 0 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
@@ -25,8 +25,8 @@ const Hero1 = () => {
 
         {/* Heading */}
         <div className="flex flex-row items-center justify-between w-full">
-          <h1 className="font-poppins font-semibold ss:text-[42px] text-[45px] text-white ss:leading-[70px] leading-[75px] text-left">
-            The <span className="text-gradient">FASTEST</span> Way To Write <br className="hidden sm:block" /> Copy For Your{' '}
+          <h1 className="font-poppins font-semibold ss:text-[24px] text-[20px] text-white ss:leading-[70px] leading-[75px] text-left">
+            The <span className="text-gradient">FASTEST</span> Way To Write and the <br className="hidden sm:block" /> Copy For Your{' '}
             <span className="text-gradient">WEBSITE</span>
           </h1>
         </div>
@@ -38,14 +38,14 @@ const Hero1 = () => {
         <div className={`relative flex justify-end w-full h-[60vh] sm:h-screen pr-6 sm:pr-0`}>
 
           {/* iMac Image */}
-          <div className="absolute top-0 left-0 right-0 z-10 mx-auto sm:right-2 sm:top-16 animate-custom-bounce">
+          <div className="absolute top-0 left-0 right-0 z-10 mx-auto sm:right-2 sm:top-6 animate-custom-bounce">
             <motion.img
               src={iMac1}
               alt=""
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className="w-3/12 mx-auto h-1/w-3/12 sm:h-full sm:w-full sm:object-none sm:object-top"
+              className="w-2/12 mx-auto h-1/w-3/12 md:h-full md:w-full md:object-none md:object-top"
             />
           </div>
 
@@ -77,7 +77,7 @@ const Hero1 = () => {
           <motion.img
             src={model3}
             alt="Model 1"
-            className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
+            className="object-cover w-1/2 h-5/6 md:h-5/6 relative z-[5]"
             initial={{ x: -100, opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -86,7 +86,7 @@ const Hero1 = () => {
           <motion.img
             src={model4}
             alt="Model 2"
-            className="object-cover w-1/2 h-3/5 top-8 sm:h-4/5 sm:top-4 relative z-[5]"
+            className="object-cover w-1/2 h-3/4 top-8 md:h-4/5 md:top-4 relative z-[5]"
             initial={{ x: 100, opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
