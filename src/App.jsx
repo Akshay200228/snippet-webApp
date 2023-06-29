@@ -4,6 +4,7 @@ import { Navbar } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Home from './pages/Home';
+import Preloader from './constants/Preloader';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,26 +27,31 @@ const App = () => {
   }, []);
 
   return (
-    <div className='w-full overflow-hidden' style={{ backgroundColor: '#0C0E15' }}>
+    <div className="w-full overflow-hidden" style={{ backgroundColor: '#0C0E15' }}>
       {isLoading ? (
         // Preloader component
-        <div className={`${styles.flexCenter} h-screen`}>
-          <h1 className="text-4xl text-white">Loading...</h1>
-        </div>
+        <Preloader />
       ) : (
-        <>
-          <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Navbar />
-            </div>
-          </div>
+        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0C0E15' }}>
+          {isLoading ? (
+            // Preloader component
+            <Preloader />
+          ) : (
+            <>
+              <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+                <div className={`${styles.boxWidth}`}>
+                  <Navbar />
+                </div>
+              </div>
 
-          <div className={`${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Home />
-            </div>
-          </div>
-        </>
+              <div className={`${styles.flexStart}`}>
+                <div className={`${styles.boxWidth}`}>
+                  <Home />
+                </div>
+              </div>
+            </>
+          )}
+        </div>
       )}
     </div>
   );
