@@ -8,7 +8,12 @@ const Hero1 = () => {
   return (
     <section id="hero" className={`flex md:flex-row flex-col-reverse ${styles.paddingY}`}>
       {/* Left side */}
-      <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} data-aos="fade-right" data-aos-delay="400">
+      <motion.div
+        className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
         {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
@@ -25,21 +30,22 @@ const Hero1 = () => {
             <span className="text-gradient">WEBSITE</span>
           </h1>
         </div>
-      </div>
+      </motion.div>
 
       {/* Right side */}
       {/* Models */}
       <div className={`${styles.flexCenter} pt-6 flex items-end justify-end flex-1 lg:mt-0`}>
-        <div className={`relative flex justify-end w-full h-screen pr-6 sm:pr-0`}>
+        <div className={`relative flex justify-end w-full h-[60vh] sm:h-screen pr-6 sm:pr-0`}>
+
           {/* iMac Image */}
-          <div className="absolute left-0 right-0 z-10 mx-auto sm:right-2 top-24 sm:top-16 animate-custom-bounce">
+          <div className="absolute top-0 left-0 right-0 z-10 mx-auto sm:right-2 sm:top-16 animate-custom-bounce">
             <motion.img
               src={iMac1}
               alt=""
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className="object-none object-top mx-auto"
+              className="w-3/12 mx-auto h-1/w-3/12 sm:h-full sm:w-full sm:object-none sm:object-top"
             />
           </div>
 
@@ -51,7 +57,7 @@ const Hero1 = () => {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className="object-none object-bottom mx-auto"
+              className="w-1/2 mx-auto sm:h-full sm:w-full sm:object-bottom h-1/2 sm:object-none"
             />
           </div>
 
@@ -63,8 +69,9 @@ const Hero1 = () => {
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, delay: 1 }}
-              className="object-none object-bottom mx-auto"
+              className="w-1/2 mx-auto sm:h-full sm:w-full sm:object-bottom h-1/2 sm:object-none"
             />
+
           </div>
 
           <motion.img
@@ -73,7 +80,7 @@ const Hero1 = () => {
             className="object-cover w-1/2 h-4/6 sm:h-5/6 relative z-[5]"
             initial={{ x: -100, opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           />
 
           <motion.img
@@ -82,7 +89,7 @@ const Hero1 = () => {
             className="object-cover w-1/2 h-3/5 top-8 sm:h-4/5 sm:top-4 relative z-[5]"
             initial={{ x: 100, opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           />
 
           {/* Gradients */}

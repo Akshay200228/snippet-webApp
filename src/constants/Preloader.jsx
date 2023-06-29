@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import styles from '../style';
 import './Preloader.css';
-import {logo6} from '../assets'; // Replace with your logo file path
+import {logo6} from '../assets';
 
 const Preloader = () => {
   const springProps = useSpring({
