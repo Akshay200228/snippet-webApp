@@ -10,6 +10,7 @@ import people02 from "./people02.png";
 import people03 from "./people03.png";
 import model2 from "./model2.svg";
 import model3 from "./model3.png";
+import model4 from "./model4.png";
 import Object_cal from "./Object_cal.png";
 import phone from "./phone.png";
 import headphones from "./headphones.png";
@@ -28,6 +29,7 @@ export {
   people03,
   model2,
   model3,
+  model4,
   Object_cal,
   phone,
   headphones,
