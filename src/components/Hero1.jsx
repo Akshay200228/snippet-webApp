@@ -41,7 +41,7 @@ const Hero1 = () => {
                   loop: true,
                   delay: 50,
                   deleteSpeed: 20,
-                  cursor: '_',
+                  cursor: '<span class="typewriter-cursor">|</span>',
                   stringSplitter: '|',
                   wrapperClassName: 'typewriter-wrapper',
                   cursorClassName: 'typewriter-cursor',
@@ -61,13 +61,10 @@ const Hero1 = () => {
                 }}
               />
 
-
             </span>{' '}
             For Your <span className="text-gradient">WEBSITE</span>
           </h1>
         </div>
-
-
       </motion.div>
 
 
