@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Typewriter from 'typewriter-effect';
+
 import { iMac1, Object_cal, phone, price, model3, model4 } from '../assets';
 import styles from '../style';
 import './Hero1.css';
@@ -25,12 +27,49 @@ const Hero1 = () => {
 
         {/* Heading */}
         <div className="flex flex-row items-center justify-between w-full">
-          <h1 className="font-poppins font-semibold ss:text-[24px] text-[20px] text-white ss:leading-[70px] leading-[75px] text-left">
-            The <span className="text-gradient">FASTEST</span> Way To Write and the <br className="hidden sm:block" /> Copy For Your{' '}
-            <span className="text-gradient">WEBSITE</span>
+          <h1 className="font-poppins font-semibold md:text-[36px] sm:text-[36px] text-[26px] text-white ss:leading-[65px] leading-[50px] text-left">
+            <span className="text-gradient">FASTEST</span> Way To Provide{' '}
+            <span className="typewriter-container">
+              <Typewriter
+                options={{
+                  strings: [
+                    '<span class="gradient-text">Landing page Templates</span>',
+                    '<span class="gradient-text">Buttons Animations</span>',
+                    '<span class="gradient-text">Loader Animations</span>',
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                  deleteSpeed: 20,
+                  cursor: '_',
+                  stringSplitter: '|',
+                  wrapperClassName: 'typewriter-wrapper',
+                  cursorClassName: 'typewriter-cursor',
+                  onInit: (typewriter) => {
+                    typewriter
+                      .typeString('<span class="gradient-text">Scroll Effects</span>')
+                      .pauseFor(1000)
+                      .deleteChars(13)
+                      .typeString('<span class="gradient-text">Scroll Animations</span>')
+                      .pauseFor(1000)
+                      .deleteChars(16)
+                      .typeString('<span class="gradient-text">Modal Popups</span>')
+                      .pauseFor(1000)
+                      .deleteChars(12)
+                      .start();
+                  },
+                }}
+              />
+
+
+            </span>{' '}
+            For Your <span className="text-gradient">WEBSITE</span>
           </h1>
         </div>
+
+
       </motion.div>
+
 
       {/* Right side */}
       {/* Models */}

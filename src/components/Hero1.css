@@ -15,3 +15,9 @@
 .animate-custom-bounce {
   animation: custom-bounce 3s ease-in-out infinite;
 }
+
+.gradient-text {
+  background-image: linear-gradient(to right, #6674CC, #9059FF, #FF6B98);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
