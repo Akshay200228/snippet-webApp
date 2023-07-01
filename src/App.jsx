@@ -32,26 +32,19 @@ const App = () => {
         // Preloader component
         <Preloader />
       ) : (
-        <div className="w-full overflow-hidden" style={{ backgroundColor: '#0C0E15' }}>
-          {isLoading ? (
-            // Preloader component
-            <Preloader />
-          ) : (
-            <>
-              <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-                <div className={`${styles.boxWidth}`}>
-                  <Navbar />
-                </div>
-              </div>
+        <>
+          <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Navbar />
+            </div>
+          </div>
 
-              <div className={`${styles.flexStart}`}>
-                <div className={`${styles.boxWidth}`}>
-                  <Home />
-                </div>
-              </div>
-            </>
-          )}
-        </div>
+          <div className={`${styles.flexStart}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Home />
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
