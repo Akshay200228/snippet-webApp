@@ -14,7 +14,7 @@ const Hero1 = () => {
         className={`flex-1 ${styles.flexStart} h-[20vh] sm:h-screen flex-col xl:px-0 sm:px-16 px-6`}
         initial={{ x: -100, opacity: 0 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.6 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
       >
         {/* Discount */}
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
@@ -39,8 +39,8 @@ const Hero1 = () => {
                   ],
                   autoStart: true,
                   loop: true,
-                  delay: 50,
-                  deleteSpeed: 20,
+                  delay: 60,
+                  deleteSpeed: 30,
                   cursor: '<span class="typewriter-cursor">|</span>',
                   stringSplitter: '|',
                   wrapperClassName: 'typewriter-wrapper',
@@ -48,7 +48,7 @@ const Hero1 = () => {
                   onInit: (typewriter) => {
                     typewriter
                       .typeString('<span class="gradient-text">Scroll Effects</span>')
-                      .pauseFor(1000)
+                      .pauseFor(2000)
                       .deleteChars(13)
                       .typeString('<span class="gradient-text">Scroll Animations</span>')
                       .pauseFor(1000)

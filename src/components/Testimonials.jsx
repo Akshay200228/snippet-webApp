@@ -15,7 +15,7 @@ const Testimonials = () => {
     <section id='Testimonials' className={`${styles.paddingX} mt-20 `}>
       {/* Testimonials */}
       <div className="flex flex-row items-center justify-center w-full"
-       data-aos='fade-down' data-aos-delay='600'
+       data-aos='fade-down' data-aos-delay='500'
       >
         <h1 className="font-poppins text-center font-semibold md:text-[36px] sm:text-[36px] text-[26px] text-white ss:leading-[65px] leading-[50px]">
           The <span className='text-gradient'>FASTEST</span> {" "}

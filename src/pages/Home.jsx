@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Hero1, Overview, Testimonials } from '../components'
+import { Footer, Hero1, Status, Testimonials } from '../components'
 import styles from '../style'
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
         <div className={`${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
                 <Hero1 />
-                <Overview />
+                <Status />
                 <Testimonials />
                 <Footer />
             </div>
