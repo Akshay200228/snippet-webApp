@@ -27,7 +27,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden" style={{ backgroundColor: '#0C0E15' }}>
+    <div className="w-full overflow-hidden scroll-smooth" style={{ backgroundColor: '#0C0E15' }}>
       {isLoading ? (
         // Preloader component
         <Preloader />
