@@ -4,12 +4,14 @@ import Testimonials from "./Testimonials";
 import Hero1 from "./Hero1";
 import Status from "./Status";
 import ClientSlider from "./ClientSlider";
+import About from "./About";
 
 export {
   Navbar,
-  Footer,
-  Testimonials,
   Hero1,
   Status,
+  About,
   ClientSlider,
+  Testimonials,
+  Footer,
 };

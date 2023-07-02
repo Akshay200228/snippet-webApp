@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Hero1, Status, Testimonials } from '../components'
+import { Footer, Hero1, Status, Testimonials, About } from '../components'
 import styles from '../style'
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
             <div className={`${styles.boxWidth}`}>
                 <Hero1 />
                 <Status />
+                <About />
                 <Testimonials />
                 <Footer />
             </div>
