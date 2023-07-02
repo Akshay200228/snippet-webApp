@@ -6,7 +6,10 @@ import styles from '../style';
 const About = () => {
   return (
     <div className={`${styles.paddingY} flex flex-col lg:flex-row h-screen`}>
-      <div className="flex-1 lg:order-2">
+      <div 
+        className="flex-1 lg:order-2"
+        data-aos='fade-left' data-aos-delay='500'
+      >
         <Spline scene="https://prod.spline.design/pXCMJVRC9ixKeQ63/scene.splinecode" />
       </div>
       <div className="flex-1 lg:order-1">

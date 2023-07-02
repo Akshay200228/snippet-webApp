@@ -130,11 +130,20 @@ const Hero1 = () => {
 
           {/* Gradients */}
           {/* Gradient 1 */}
-          <div className="absolute z-0 w-[40%] h-[35%] top-0 right-0 purple__gradient" />
+          <div
+            className="absolute z-0 w-[40%] h-[35%] top-0 right-0 purple__gradient"
+            data-aos='fade-left' data-aos-delay='600'
+          />
           {/* Gradient 2 */}
-          <div className="absolute z-1 w-[80%] h-[80%] rounded-full white__gradient top-0 right-0" />
+          <div
+            className="absolute z-1 w-[80%] h-[80%] rounded-full white__gradient top-0 right-0"
+            data-aos='fade-left' data-aos-delay='800'
+          />
           {/* Gradient 3 */}
-          <div className="absolute z-0 w-[50%] h-[50%] right-0 top-0 blue__gradient" />
+          <div
+            className="absolute z-0 w-[50%] h-[50%] right-0 top-0 blue__gradient"
+            data-aos='fade-left' data-aos-delay='1000'
+          />
         </div>
       </div>
     </section>
