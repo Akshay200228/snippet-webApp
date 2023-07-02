@@ -1,11 +1,8 @@
-import React from 'react';
-import Spline from '@splinetool/react-spline';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div>
-      <Spline scene="https://prod.spline.design/eVrxbIAWKaHRsGWx/scene.splinecode" />
-    </div>
+    <div>Footer</div>
   )
 }
 

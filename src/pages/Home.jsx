@@ -8,9 +8,9 @@ const Home = () => {
             <div className={`${styles.boxWidth}`}>
                 <Hero1 />
                 <Status />
+                {/* <About /> */}
                 <Testimonials />
                 <Footer />
-                {/* <About /> */}
             </div>
         </div>
     )
