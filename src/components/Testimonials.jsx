@@ -12,10 +12,10 @@ const Testimonials = () => {
   const { title, clients } = testimonials;
 
   return (
-    <section id='Testimonials' className={`${styles.paddingX} mt-20 `}>
+    <section id='Testimonials' className={`${styles.paddingX} mt-4 sm:mt-20 `}>
       {/* Testimonials */}
       <div className="flex flex-row items-center justify-center w-full"
-       data-aos='fade-down' data-aos-delay='500'
+       data-aos='fade-down' data-aos-delay='200'
       >
         <h1 className="font-poppins text-center font-semibold md:text-[36px] sm:text-[36px] text-[26px] text-white ss:leading-[65px] leading-[50px]">
           The <span className='text-gradient'>FASTEST</span> {" "}
@@ -24,7 +24,7 @@ const Testimonials = () => {
         </h1>
       </div>
       
-      <div className='container mx-auto' data-aos='fade-right' data-aos-delay='500'>
+      <div className='container mx-auto' data-aos='fade-right' data-aos-delay='400'>
         {/* title */}
         <h2 className='title mb-10 lg:mb-20 text-center max-w-[920px] mx-auto'>
           {title}
