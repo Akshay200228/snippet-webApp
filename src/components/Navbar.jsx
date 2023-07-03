@@ -72,20 +72,36 @@ const Navbar = () => {
         {toggle && (
           <div className="mr-10 flex flex-col items-center p-6 bg-black-gradient absolute top-full right-0 mt-2 mx-4 min-w-[140px] rounded-xl sidebar">
             <ul className="flex flex-col items-start justify-end flex-1 mb-4 list-none">
-              <li className='font-poppins font-normal cursor-pointer text-[16px] text-white'>Home</li>
-              <li className='font-poppins font-normal cursor-pointer text-[16px] text-white'>Docs</li>
-              <li className='font-poppins font-normal cursor-pointer text-[16px] text-white'>About</li>
-              <li className='font-poppins font-normal cursor-pointer text-[16px] text-white'>Contact</li>
+              <li className='mb-2'>
+                <Link to="/" className='font-poppins font-normal cursor-pointer text-[16px] text-white'>
+                  Home
+                </Link>
+              </li>
+              <li className='mb-2'>
+                <Link to="/docs" className='font-poppins font-normal cursor-pointer text-[16px] text-white'>
+                  Docs
+                </Link>
+              </li>
+              <li className='mb-2'>
+                <Link to="/about" className='font-poppins font-normal cursor-pointer text-[16px] text-white'>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className='font-poppins font-normal cursor-pointer text-[16px] text-white'>
+                  Contact
+                </Link>
+              </li>
             </ul>
 
             <div className="flex flex-col items-center">
               <button
                 type="button"
-                className="py-4 px-6 font-poppins font-medium text-[14px] text-primary bg-purple-gradient rounded-[10px] outline-none"
+                className="py-3 px-2 font-poppins font-medium text-[14px] text-primary bg-purple-gradient rounded-[10px] outline-none"
               >
                 Get Started
               </button>
-              <button className="px-4 py-2 mt-4 text-sm text-white bg-gray-500 rounded-2xl hover:bg-gray-600">
+              <button className="px-8 py-2 mt-4 text-sm text-white bg-gray-500 rounded-2xl hover:bg-gray-600">
                 Login
               </button>
             </div>
