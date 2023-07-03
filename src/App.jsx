@@ -54,7 +54,7 @@ const App = () => {
               </div>
             </div>
 
-            <div className={`${styles.paddingX} ${styles.flexStart} mt-10 border-t border-gray-500 rounded-t-[100px] rounded-b-none shadow-md bg-gray-900`} data-aos="fade">
+            <div className={`${styles.paddingX} ${styles.flexStart} mt-24 border-t border-gray-500 rounded-t-[100px] rounded-b-none shadow-md bg-[#29347a]`} data-aos="fade">
             <div className={`${styles.boxWidth}`}>
               <Footer />
             </div>
