@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styles from './style';
-import { Navbar } from './components';
+import { Footer, Navbar } from './components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Home from './pages/Home';
+import { Contact, Docs, Home, About } from './pages';
 import Preloader from './constants/Preloader';
+import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom'
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,26 +30,39 @@ const App = () => {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden scroll-smooth" style={{ backgroundColor: '#0C0E15' }}>
-      {isLoading ? (
-        // Preloader component
-        <Preloader />
-      ) : (
-        <>
-          <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Navbar />
+    <BrowserRouter>
+      <div className="w-full overflow-hidden scroll-smooth" style={{ backgroundColor: '#0C0E15' }}>
+        {isLoading ? (
+          // Preloader component
+          <Preloader />
+        ) : (
+          <>
+            <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+              <div className={`${styles.boxWidth}`}>
+                <Navbar />
+              </div>
             </div>
-          </div>
 
-          <div className={`${styles.flexStart}`}>
+            <div className={`${styles.flexStart}`}>
+              <div className={`${styles.boxWidth}`}>
+                <Routes>
+                  <Route exact path="/" element={<Home />} />
+                  <Route path="/docs" element={<Docs />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                </Routes>
+              </div>
+            </div>
+
+            <div className={`${styles.paddingX} ${styles.flexStart} mt-10 border-t border-gray-500 rounded-t-[100px] rounded-b-none shadow-md bg-gray-900`} data-aos="fade">
             <div className={`${styles.boxWidth}`}>
-              <Home />
+              <Footer />
             </div>
           </div>
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
+    </BrowserRouter>
   );
 };
 
