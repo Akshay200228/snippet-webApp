@@ -17,17 +17,17 @@ const Hero1 = () => {
         transition={{ duration: 0.8, delay: 0.8 }}
       >
         {/* Discount */}
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        <div className="flex flex-row items-center py-[6px] px-4 bg-[#a1a7cc] dark:bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900 rounded-[10px] mb-2">
           <img src={price} alt="price" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">Free</span> Use For{' '}
-            <span className="text-white">1 Month</span> Account
+          <p className={`${styles.paragraph} ml-2 font-semibold text-primary dark:text-white`}>
+            <span className="">Free</span> Use For{' '}
+            <span>1 Month</span> Account
           </p>
         </div>
 
         {/* Heading */}
         <div className="flex flex-row items-center justify-between w-full">
-          <h1 className="font-poppins font-semibold md:text-[36px] sm:text-[36px] text-[26px] text-white ss:leading-[65px] leading-[50px] text-left">
+          <h1 className="font-poppins font-semibold md:text-[36px] sm:text-[36px] text-[26px] text-primary dark:text-white ss:leading-[65px] leading-[50px] text-left">
             <span className="text-gradient">FASTEST</span> Way To Provide{' '}
             <span className="typewriter-container">
               <Typewriter

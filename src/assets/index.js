@@ -15,6 +15,7 @@ import price from "./price.png";
 import suitModel from "./suitModel.png";
 import suitModel2 from "./suitModel2.png";
 import suitModel3 from "./suitModel3.png";
+import ace2 from "./ace2.png";
 import ArrowRightImg from "./ArrowRightImg.svg";
 
 export {
@@ -36,4 +37,5 @@ export {
   suitModel,
   suitModel2,
   suitModel3,
+  ace2,
 };

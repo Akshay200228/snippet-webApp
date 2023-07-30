@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import { close, logo6, menu } from '../assets';
+import { ace2, close, menu } from '../assets';
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -15,45 +16,62 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 z-50 flex items-center justify-between w-full py-4 navbar backdrop-filter backdrop-blur-lg bg-opacity-70"
+      className="fixed top-0 z-50 flex items-center justify-between w-full py-4 text-primary dark:text-white navbar backdrop-filter backdrop-blur-lg bg-opacity-70"
       data-aos='fade-down' data-aos-delay='200'
     >
       <img
-        src={logo6}
+        src={ace2}
         alt="logo"
         className="w-[124px] h-[32px]"
       />
-      <ul className="items-center justify-end hidden space-x-4 sm:flex">
+      <ul className="items-center justify-end hidden space-x-4 sm:flex ">
         <li>
-          <Link to="/" className='font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-purple-400'>
+          <Link 
+            to="/" 
+            className="font-poppins font-normal cursor-pointer text-[16px] hover:text-purple-400 hover:bg-gray-700 px-3 py-2 rounded-md transition-colors duration-300"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="/docs" className='font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-purple-400'>
+          <Link 
+            to="/docs" 
+            className="font-poppins font-normal cursor-pointer text-[16px] hover:text-purple-400 hover:bg-gray-700 px-3 py-2 rounded-md transition-colors duration-300"
+          >
             Docs
           </Link>
         </li>
         <li>
-          <Link to="/about" className='font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-purple-400'>
+          <Link 
+            to="/about" 
+            className="font-poppins font-normal cursor-pointer text-[16px] hover:text-purple-400 hover:bg-gray-700 px-3 py-2 rounded-md transition-colors duration-300"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="/contact" className='font-poppins font-normal cursor-pointer text-[16px] text-white hover:text-purple-400'>
+          <Link 
+            to="/contact" 
+            className="font-poppins font-normal cursor-pointer text-[16px] hover:text-purple-400 hover:bg-gray-700 px-3 py-2 rounded-md transition-colors duration-300"
+          >
             Contact
           </Link>
         </li>
+        <li>
+          <ThemeToggle  
+            className="font-poppins font-normal cursor-pointer text-[16px] hover:text-purple-400 hover:bg-gray-700 px-3 py-2 rounded-md transition-colors duration-300"
+          />
+        </li>
       </ul>
-      <div className="hidden mr-20 space-x-4 sm:flex">
+      <div className="hidden mr-20 space-x-4 sm:flex text-primary dark:text-white">
         <button
           type="button"
-          className={`py-4 px-6 font-poppins font-medium text-[14px] text-white bg-purple-gradient rounded-[10px] outline-none ${animateButton ? 'animate-pulse' : ''
+          className={`py-4 px-6 font-poppins font-medium text-[14px] bg-purple-gradient rounded-[10px] outline-none ${animateButton ? 'animate-pulse' : ''
             }`}
         >
           Get Started
         </button>
-        <button className="px-4 py-2 text-sm text-white bg-gray-500 rounded-2xl hover:bg-gray-600">
+        <button className="px-4 py-2 text-sm bg-gray-400 rounded-2xl hover:bg-purple-100 dark:hover:bg-gray-600">
           Login
         </button>
       </div>
@@ -91,6 +109,9 @@ const Navbar = () => {
                 <Link to="/contact" className='font-poppins font-normal cursor-pointer text-[16px] text-white'>
                   Contact
                 </Link>
+              </li>
+              <li>
+                <ThemeToggle className='font-poppins font-normal cursor-pointer text-[16px]'/>
               </li>
             </ul>
 

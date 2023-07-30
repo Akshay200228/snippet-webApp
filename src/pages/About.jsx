@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactForm from '../components/ContactForm';
 import styles from '../style';
 
 const About = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={`${styles.paddingY} flex flex-col lg:flex-row h-screen`}>
       <div className="flex-1 mt-20 lg:order-1">

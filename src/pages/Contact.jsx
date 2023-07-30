@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 import ContactForm from '../components/ContactForm';
 import styles from '../style';
 
 const Contact = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={`${styles.paddingY} flex flex-col lg:flex-row h-screen`}>
       <div 

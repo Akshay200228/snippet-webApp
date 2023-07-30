@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { testimonials } from '../constants/index';
 
 // import styles from '../style';
@@ -10,6 +10,10 @@ import styles from '../style';
 const Docs = () => {
   // destructure testimonials
   const { title, clients } = testimonials;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section id='Testimonials' className={`${styles.paddingX} h-screen mt-20 `}>

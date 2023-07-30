@@ -63,7 +63,7 @@
       #14101d 95.11%);
 }
 
-.bg-discount-gradient {
+.bg-discount {
   background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 }
 
@@ -130,4 +130,26 @@
 .white__gradient {
   background: rgba(102, 116, 204, 0.6);
   filter: blur(750px);
+}
+
+.dark{
+  --color-bg-primary: #0a54d4;
+  --color-bg-primary: #0C0E15;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #dbdbdb;
+  --color-text-secondary: #f0e3e2;
+  --color-text-accent: #81e6d9;
+  --color-bg-discount: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  --color-bg-button: #81e6d9;
+}
+
+.light{
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+  --color-bg-input: #edf2f7;
+  --color-bg-button: #2b6cb0;
+  
 }
